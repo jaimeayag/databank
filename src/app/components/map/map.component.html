@@ -1,0 +1,18 @@
+<div class="container container-custom">
+  <form>
+    <div class="form-group">
+      <label class="form-label-custom">Select Category: </label>
+      <select class="form-control form-select-custom" id="category-select"
+        (change)="categorySelect($event.target.value)">
+        <option value="Taxi-Availability">Available Taxis</option>
+        <option value="TrafficIncidents">Traffic Incidents</option>
+      </select>
+    </div>
+  </form>
+</div>
+
+<div class="map-container map-container-custom">
+  <div class="map-frame">
+    <div class='custom-popup' id="map"></div>
+  </div>
+</div>

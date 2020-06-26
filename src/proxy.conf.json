@@ -1,0 +1,7 @@
+{
+    "/ltaodataservice/*": {
+        "target": "http://datamall2.mytransport.sg",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

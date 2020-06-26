@@ -1,0 +1,38 @@
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 30px;
+  margin-bottom: 60px;
+}
+
+.map-frame {
+  border: 2px solid black;
+  height: 100%;
+}
+
+#map {
+  height: 100%;
+}
+  
+.map-container-custom {
+  margin-top: 160px;
+}
+  
+.form-select-custom {
+  max-width: 300px;
+}
+
+.container-custom {
+  text-align: left;
+  margin-left: 15px;
+  padding-top: 20px;
+}
+
+.form-label-custom {
+  font-size: 14px;
+  color: #212529;
+  font-weight: bold;
+}

@@ -1,0 +1,31 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+      {
+        "type":"Feature",
+        "geometry": 
+            {
+              "type": "Point",
+              "coordinates": [103.967589, 1.331847]
+            },
+        "properties":
+            {
+                "name": "Premier Taxis",
+                "population": 100
+            }
+      },
+      {
+        "type":"Feature",
+        "geometry": 
+            {
+              "type": "Point",
+              "coordinates": [103.9312, 1.3239]
+            },
+        "properties":
+            {
+                "name": "Bedok Interchange",
+                "population": 500
+            }
+      }
+  ]
+}
