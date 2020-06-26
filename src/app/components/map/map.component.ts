@@ -47,6 +47,9 @@ export class MapComponent implements OnInit {
 
   ngOnInit(): void {
 
+    //
+    console.log("maps started");
+
     // initialize here
     this.initMap();
     // Taxi-Availability / TrafficIncidents
