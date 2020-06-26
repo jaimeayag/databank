@@ -7,11 +7,19 @@ import { AppSettings } from 'src/app/common/app-settings';
 // jquery here
 declare var $: any;
 
-const iconRetinaUrl = 'assets/marker-icon-2x.png';
-const iconUrl = 'assets/marker-icon.png';
+// const iconRetinaUrl = 'assets/marker-icon-2x.png';
+// const iconUrl = 'assets/marker-icon.png';
+// // const iconUrl = 'assets/warning.svg';
+// // const iconUrl = 'assets/taxi.svg';
+// const shadowUrl = 'assets/marker-shadow.png';
+
+// revised here (C:\Dev\github\angular-workspace\jad\src\assets\images\leaflet\)
+const iconRetinaUrl = 'assets/images/leaflet/marker-icon-2x.png';
+const iconUrl = 'assets/images/leaflet/marker-icon.png';
 // const iconUrl = 'assets/warning.svg';
 // const iconUrl = 'assets/taxi.svg';
 const shadowUrl = 'assets/marker-shadow.png';
+
 const iconDefault = L.icon({
   iconRetinaUrl,
   iconUrl,

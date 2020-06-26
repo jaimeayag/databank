@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   dialogflow: {
     angularBot: 'eff2abac18a14e07a1dcd5f814666012'
-  }
+  },
+  appRoot: "/"
 };
 
 /*
