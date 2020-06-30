@@ -128,7 +128,7 @@ export class MarkerService {
     var opencage_api = "https://api.opencagedata.com/geocode/v1/json?q=" + e.latlng.lat + "+" + e.latlng.lng + "&key=282637ea31194caa8e7bfa166d0acac8";
     var arcgis_api = "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/reverseGeocode?f=pjson&featureTypes=&location=" + e.latlng.lng + "," + e.latlng.lat;
 
-    var openstreetmap_api = "https://nominatim.openstreetmap.org/reverse?format=json&lat=" + e.latlng.lat + "&lon=" + e.latlng.lng + "&zoom=18&addressdetails=1";
+    var openstreetmap_api = "https://nominatim.openstreetmap.org/reverse?format=json&lat=" + e.latlng.lat + "&lon=" + e.latlng.lng + "&zoom=16&addressdetails=1";
 
     // api request here
     this.http.get(openstreetmap_api).subscribe((res: any) => {

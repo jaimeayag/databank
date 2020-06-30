@@ -1,30 +1,127 @@
 @import "~milligram/dist/milligram.min.css";
 
-.to {
-    padding: 15px;
-    border-radius: 35px;
-    background: #3498DB;
-    margin-left: 135px;
-    color:#fff;
-    margin-bottom: 20px;
-}
-.from {
-    padding: 15px;
-    border-radius: 35px;
-    background: #E5E7E9; 
-    margin-right: 135px;
-    margin-bottom: 20px;
-}
-
-.chat-container {
-    max-width: 500px;
-}
-
-.chat-label {
-    font-size: 16px;
-}
-
 .chat-button {
     font-size: 16px;
     padding: 0px 30px;
+}
+
+.message {
+    font-size: 14px;
+}
+
+.to {
+    padding: 12px;
+    border-radius: 15px;
+    background: #3498DB;
+    margin-left: auto;
+    color:#fff;
+    // margin-top: 10px;
+    margin-right: 10px;
+    width: max-content;
+    max-width: 200px;
+}
+
+.from {
+    padding: 12px;
+    border-radius: 15px;
+    background: #E5E7E9; 
+    // margin-right: 135px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+
+    width: fit-content;
+    max-width: 200px;
+}
+
+.chat-label {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.bot-name {
+    // margin-top: 12px;
+    // margin-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    color: #e9ecef;
+}
+
+
+/* The popup chat - hidden by default */
+.chat-popup {
+    // display: none;
+    position: fixed;
+    bottom: 0;
+    right: 35px;
+    border: 2px solid #f1f1f1;
+    z-index: 9;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 310px;
+    min-width: 310px;
+}
+
+.chat-header {
+    // position: fixed;
+    top: 0;
+    padding-left: 15px;
+    background-color: #343a40;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+.chat-body {
+    position: relative;
+    // overflow-y: scroll;
+    overflow: auto;
+    max-height: 255px;
+    min-height: 255px;
+    background-color: #bfc6ce;
+}
+
+.chat-footer {
+    bottom: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.chat-textarea {
+    margin-bottom: 10px;
+    height: 30px !important;
+    border-radius: 0px !important;
+    // border-color: #343a40 !important;
+    padding-left: 10px !important;
+    border: 1px solid #d1d1d1 !important;
+}
+
+.chat-textarea:focus {
+    border-color: #343a40 !important;
+}
+
+.chat-hidden {
+    display: none;
+}
+
+.chat-display {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .chat-popup {
+        right: 5px;
+
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .chat-popup {
+        display: none;
+
+    }
 }

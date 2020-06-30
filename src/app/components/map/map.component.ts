@@ -47,9 +47,6 @@ export class MapComponent implements OnInit {
 
   ngOnInit(): void {
 
-    //
-    console.log("maps started");
-
     // initialize here
     this.initMap();
     // Taxi-Availability / TrafficIncidents
@@ -71,6 +68,16 @@ export class MapComponent implements OnInit {
       , AppSettings.TRAFFIC_INCIDENTS_INTERVAL);
 
     // -------------------------------------------------------------
+  }
+
+  // on destroy here
+  ngOnDestroy() {
+
+    //
+    console.log("map destroyed here");
+
+    //
+    this.terminateTimer();
   }
 
   // terminate timer here

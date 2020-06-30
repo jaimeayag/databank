@@ -1,18 +1,24 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-12 margin-top1-15 chat-container">
-            <h4 style="margin-top:30px;"> JAD Chat Bot</h4>
-            <!-- <div class="chat-body" > -->
-                <ng-container *ngFor="let message of messages| async">
-                    <div class="message" [ngClass]="{'from':message.sentBy==='bot','to':message.sentBy==='user'}">
-                        {{message.content}}
-                    </div>
-                </ng-container>
-            <!-- </div> -->
+<div class="col-md-12 margin-top1-15 chat-container chat-popup">
 
-            <label class="chat-label" for="nameField">Your Message</label>
-            <input type="text" [(ngModel)]="formValue" (keyup.enter)="sendMessage()" /><br>
-            <button class="chat-button" (click)="sendMessage()" >Send</button>
-        </div>
+    <div class="chat-header" (click)="toggleChatbox()">
+        <!-- <h5 style="margin-top:30px;"> JAD Chat Bot</h5> -->
+        <div class="bot-name">JAD-bot</div>
+    </div>
+
+    <!-- #scrollMe [scrollTop]="scrollMe.scrollHeight" -->
+    <!-- body here -->
+    <div class="chat-body chat-hidden" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+        <ng-container *ngFor="let message of messages| async">
+            <div class="message" [ngClass]="{'from':message.sentBy==='bot','to':message.sentBy==='user'}">
+                {{message.content}}
+            </div>
+        </ng-container>
+    </div>
+
+    <!-- footer here -->
+    <div class="chat-footer chat-hidden" >
+        <!-- <label class="chat-label" for="nameField">Message</label> -->
+        <input type="text" class="chat-textarea" [(ngModel)]="formValue" (keyup.enter)="sendMessage()" />
+        <!-- <button class="chat-button" (click)="sendMessage()">Send</button> -->
     </div>
 </div>
