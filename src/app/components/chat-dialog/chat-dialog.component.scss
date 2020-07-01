@@ -48,13 +48,12 @@
     color: #e9ecef;
 }
 
-
 /* The popup chat - hidden by default */
 .chat-popup {
     // display: none;
     position: fixed;
     bottom: 0;
-    right: 35px;
+    right: 30px;
     border: 1px solid #f1f1f1;
     z-index: 1000;
     padding-right: 0px;

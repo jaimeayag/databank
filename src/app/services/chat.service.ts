@@ -61,9 +61,6 @@ export class ChatService {
     send_data["message_sent_by"] = message_sent_by;
     send_data["session_token"] = session_token;
 
-    //
-    console.log(send_data);
-
     // api request here
     this.http.post(this.log_chat_session_url, send_data).subscribe((res: any) => {
 
