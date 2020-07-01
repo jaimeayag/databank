@@ -19,6 +19,7 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
 // chatbot
 import { ChatDialogComponent } from './components/chat-dialog/chat-dialog.component';
 import { FormsModule } from '@angular/forms';
+import { TestComponent } from './components/test/test.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     PagenotfoundComponent,
-    ChatDialogComponent
+    ChatDialogComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,

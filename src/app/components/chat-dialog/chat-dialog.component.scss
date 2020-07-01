@@ -10,7 +10,7 @@
 }
 
 .to {
-    padding: 12px;
+    padding: 10px;
     border-radius: 15px;
     background: #3498DB;
     margin-left: auto;
@@ -22,8 +22,8 @@
 }
 
 .from {
-    padding: 12px;
-    border-radius: 15px;
+    padding: 10px;
+    border-radius: 10px;
     background: #E5E7E9; 
     // margin-right: 135px;
     margin-top: 10px;
@@ -42,8 +42,8 @@
 .bot-name {
     // margin-top: 12px;
     // margin-bottom: 12px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     font-weight: 500;
     color: #e9ecef;
 }
@@ -55,14 +55,14 @@
     position: fixed;
     bottom: 0;
     right: 35px;
-    border: 2px solid #f1f1f1;
-    z-index: 9;
+    border: 1px solid #f1f1f1;
+    z-index: 1000;
     padding-right: 0px;
     padding-left: 0px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    max-width: 310px;
-    min-width: 310px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    max-width: 300px;
+    min-width: 300px;
 }
 
 .chat-header {
@@ -70,8 +70,8 @@
     top: 0;
     padding-left: 15px;
     background-color: #343a40;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     cursor: pointer;
 }
 
@@ -88,13 +88,13 @@
     bottom: 0;
     padding-right: 10px;
     padding-left: 10px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .chat-textarea {
     margin-bottom: 10px;
     height: 30px !important;
-    border-radius: 0px !important;
+    border-radius: 5px !important;
     // border-color: #343a40 !important;
     padding-left: 10px !important;
     border: 1px solid #d1d1d1 !important;

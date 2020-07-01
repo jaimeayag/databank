@@ -19,7 +19,7 @@ export class ChatDialogComponent implements OnInit {
   session_token;
   
   // welcome message here
-  welcome_message = "Welcome! How can I help you?";
+  welcome_message = "Welcome! I'm JAD-bot, How can I help you?";
 
   constructor(private chat: ChatService) { }
 
@@ -27,11 +27,11 @@ export class ChatDialogComponent implements OnInit {
     //
     this.messages = this.chat.conversation.asObservable().pipe(scan((acc, val) => acc.concat(val)));
 
-    // welcome message here
-    this.welcomeMessage();
-
     // generate token here
     this.generateSessionToken();
+
+    // welcome message here
+    this.welcomeMessage();
   }
 
   // toggle chat box here

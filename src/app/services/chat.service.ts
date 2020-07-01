@@ -21,6 +21,7 @@ export class ChatService {
   // variables here
   readonly token = environment.dialogflow.angularBot;
   readonly client = new ApiAiClient({ accessToken: this.token });
+  
 
   // server posted variables here
   log_chat_session_url = 'chatbot/log_chat_session.php';
@@ -59,6 +60,9 @@ export class ChatService {
     send_data["message_content"] = message_content;
     send_data["message_sent_by"] = message_sent_by;
     send_data["session_token"] = session_token;
+
+    //
+    console.log(send_data);
 
     // api request here
     this.http.post(this.log_chat_session_url, send_data).subscribe((res: any) => {

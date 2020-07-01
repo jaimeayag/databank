@@ -3,11 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { MapComponent } from './components/map/map.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { ChatDialogComponent } from './components/chat-dialog/chat-dialog.component';
+import { TestComponent } from './components/test/test.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'maps', pathMatch: 'full' },
   { path: 'maps', component: MapComponent },
   { path: 'chat-bot', component: ChatDialogComponent },
+  { path: 'test', component: TestComponent },
   { path: '**', component: PagenotfoundComponent }
 ];
 
