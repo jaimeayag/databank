@@ -41,7 +41,7 @@ export class ChatService {
   update(msg: Message) {
 
     // log here
-    this.logMessage(msg);
+    // this.logMessage(msg);
 
     //
     this.conversation.next([msg]);

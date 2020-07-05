@@ -24,7 +24,7 @@
 .from {
     padding: 10px;
     border-radius: 10px;
-    background: #E5E7E9; 
+    background: #fff; 
     // margin-right: 135px;
     margin-top: 10px;
     margin-left: 15px;
@@ -80,7 +80,7 @@
     overflow: auto;
     max-height: 255px;
     min-height: 255px;
-    background-color: #bfc6ce;
+    background-color: #f1f5fa;
 }
 
 .chat-footer {
@@ -96,7 +96,7 @@
     border-radius: 5px !important;
     // border-color: #343a40 !important;
     padding-left: 10px !important;
-    border: 1px solid #d1d1d1 !important;
+    border: 0px solid #d1d1d1 !important;
 }
 
 .chat-textarea:focus {
